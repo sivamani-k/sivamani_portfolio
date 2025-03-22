@@ -1,125 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Sivamani K - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="assets/css/main.css" rel="stylesheet" />
-  <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
-    header { background: #4CAF50; color: white; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 60px 20px; }
-    h2 { color: #4CAF50; }
-    a { color: #007bff; }
-    footer { background: #333; color: white; text-align: center; padding: 10px; }
-    .card { background-color: white; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    .btn { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-    .btn:hover { background-color: #45a049; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  </style>
+  <meta content="AI/ML Data Scientist specializing in Computer Vision and Image Processing" name="description">
+  <meta content="AI, ML, Computer Vision, Image Processing, Deep Learning, Sivamani K" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Sivamani K, an AI/ML Data Scientist specializing in Computer Vision and Deep Learning.</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#resume">Resume</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/sivamani.png" alt="Sivamani K" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sivamani K</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/sivamani-k-114b1897" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/sivamani-k" class="github"><i class="bi bi-github"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>Ph.D. in Electronic Instrumentation with 2.5+ years of R&D experience. Expertise in AI/ML models for medical imaging, 3D multimodal image registration, and NLP applications.</p>
-      <a href="Untitled.pdf" download class="btn">Download My CV</a>
-    </div>
-  </section>
+  <main class="main">
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <div class="card">
-      <h3>Education</h3>
-      <ul>
-        <li>Ph.D., Electronic Science - Instrumentation, University of Madras (2018 - 2024)</li>
-        <li>M.Phil., Scientific Instrumentation, University of Madras (2016 - 2017)</li>
-        <li>M.Sc., Electronic Science, University of Madras (2014 - 2016)</li>
-        <li>B.Sc., Electronics, University of Madras (2011 - 2014)</li>
-      </ul>
-      <h3>Professional Experience</h3>
-      <ul>
-        <li><strong>Project Associate</strong> at Sudha Gopalakrishnan Brain Centre, IIT Madras (2023 - Present)</li>
-        <li><strong>Project Engineer</strong> at HTIC, IIT Madras (2022 - 2023)</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/sivamani.png" alt="Sivamani K" data-aos="fade-in">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Sivamani K</h2>
+        <p>I'm <span class="typed" data-typed-items="an AI/ML Scientist">Specializing in Image Processing and Computer Vision.</span></p>
+      </div>
+    </section><!-- /Hero Section -->
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>DHARANI</h3>
-        <p>3D Developing Human-Brain Atlas Resource for histological data integration and MRI alignment.</p>
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hi, I'm Sivamani K! An AI/ML Data Scientist with a Ph.D. in Electronic Instrumentation and over 2.5 years of R&D experience in Computer Vision, Deep Learning, and Image Processing. Passionate about developing and deploying AI models for medical imaging, 3D multimodal image registration, and NLP applications.</p>
       </div>
-      <div class="card">
-        <h3>MAFFN_YOLOv5</h3>
-        <p>Multi-Scale Attention Feature Fusion Network for coral reef health detection using YOLOv5.</p>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/sivamani.png" class="img-fluid" alt="Sivamani K">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>AI/ML Data Scientist</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://github.com/sivamani-k">github.com/sivamani-k</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8526662138</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chennai, TN, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Ph.D.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sivamanik.44@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Technical expertise in AI/ML, Computer Vision, and Model Deployment</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Machine Learning & Deep Learning</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Computer Vision</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>NLP</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Data Processing</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Model Deployment</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Cloud Platforms</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Overview of my education and professional experience</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Ph.D., Electronic Science - Instrumentation</h4>
+              <h5>Apr 2018 - Sep 2024</h5>
+              <p><em>University of Madras, TN, India</em></p>
+              <p>Thesis: 'Design and Implementation of Novel Multi-Scale Fusion Techniques for Color Contrast Restoration of Underwater Images and Coral Reef Health Detection.'</p>
+            </div>
+            <div class="resume-item">
+              <h4>M.Phil., Scientific Instrumentation</h4>
+              <h5>Sep 2016 - Oct 2017</h5>
+              <p><em>University of Madras, TN, India</em></p>
+              <p>CGPA: 8.3</p>
+            </div>
+            <div class="resume-item">
+              <h4>M.Sc., Electronic Science</h4>
+              <h5>Jun 2014 - Apr 2016</h5>
+              <p><em>University of Madras, TN, India</em></p>
+              <p>CGPA: 7.515</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Project Associate</h4>
+              <h5>Oct 2023 - Present</h5>
+              <p><em>Sudha Gopalakrishnan Brain Centre, IIT Madras</em></p>
+              <ul>
+                <li>Developed 3D multimodal histological registration for fetus brains.</li>
+                <li>Co-authored 'DHARANI: A 3D Developing Human-Brain Atlas Resource'.</li>
+                <li>Led a team of 5 engineers to optimize production pipelines.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Project Engineer</h4>
+              <h5>Jun 2022 - Oct 2023</h5>
+              <p><em>Healthcare Technology Innovation Centre (HTIC), IIT Madras</em></p>
+              <ul>
+                <li>Developed ICP-based medical image registration for robotic surgery.</li>
+                <li>Implemented deep learning techniques for biomedical image processing.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Selected projects and publications</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>DHARANI: A 3D Developing Human-Brain Atlas Resource</h4>
+                <p>3D image registration and histological reconstruction aligned to MRI coordinates.</p>
+                <a href="assets/img/portfolio/app-1.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MAFFN YOLOV5</h4>
+                <p>Multi-Scale Attention Feature Fusion Network for coral reef health detection.</p>
+                <a href="assets/img/portfolio/product-1.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Histological Cell Atlas</h4>
+                <p>Gaussian Mixture Model-based atlas with 75% improved processing speed.</p>
+                <a href="assets/img/portfolio/branding-1.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with me</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+91 8526662138</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>sivamanik.44@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sivamani K</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-    <a href="https://github.com/sivamani-k" class="btn">View My GitHub Projects</a>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>AI/ML Frameworks</h3>
-        <p>TensorFlow, PyTorch</p>
-      </div>
-      <div class="card">
-        <h3>Computer Vision</h3>
-        <p>Image registration, segmentation, reconstruction</p>
-      </div>
-      <div class="card">
-        <h3>NLP</h3>
-        <p>Text classification, semantic search</p>
-      </div>
-      <div class="card">
-        <h3>Deployment & Cloud</h3>
-        <p>Docker, Kubernetes, AWS, GCP</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Publications</h2>
-    <div class="card">
-      <ul>
-        <li>"DHARANI: A 3D Developing Human-Brain Atlas Resource" (Accepted, Journal of Comparative Neurology)</li>
-        <li>"MAFFN_YOLOv5: Multi-Scale Attention Feature Fusion Network" (Analytics, 2023)</li>
-        <li>"Multiscale Decomposition and Fusion-Based Color Contrast Restoration" (Color Research and Application, 2022)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:sivamanik.44@gmail.com">sivamanik.44@gmail.com</a></p>
-      <p>Phone: +91 8526662138</p>
-      <p>GitHub: <a href="https://github.com/sivamani-k">github.com/sivamani-k</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/sivamani-k-114b1897">linkedin.com/in/sivamani-k-114b1897</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sivamani K. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
