@@ -26,45 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Inline CSS for New Portfolio Section -->
-  <style>
-    .portfolio-new .portfolio-item {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .portfolio-new .portfolio-item:hover {
-      transform: translateY(-10px);
-    }
-    .portfolio-new .portfolio-item img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .portfolio-new .portfolio-item h4 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    .portfolio-new .portfolio-item p {
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 15px;
-    }
-    .portfolio-new .portfolio-item a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .portfolio-new .portfolio-item a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body class="index-page">
@@ -229,42 +190,48 @@
       </div>
     </section><!-- /Resume Section -->
 
-    <!-- New Portfolio Section -->
-    <section id="portfolio" class="portfolio-new section light-background">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Selected projects and publications</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/dharani.jpg" alt="DHARANI: A 3D Developing Human-Brain Atlas Resource">
-              <h4>DHARANI: A 3D Developing Human-Brain Atlas Resource</h4>
-              <p>3D image registration and histological reconstruction aligned to MRI coordinates.</p>
-              <a href="https://brainportal.humanbrain.in/publicview/index.html" target="_blank">View on GitHub</a>
+      <div class="container">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/dharani.jpg" class="img-fluid" alt="DHARANI Project">
+              <div class="portfolio-info">
+                <h4>DHARANI: A 3D Developing Human-Brain Atlas Resource</h4>
+                <p>3D image registration and histological reconstruction aligned to MRI coordinates.</p>
+                <a href="https://brainportal.humanbrain.in/publicview/index.html" title="Publicview Repository" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/coral.png" alt="MAFFN YOLOV5">
-              <h4>MAFFN YOLOV5</h4>
-              <p>Multi-Scale Attention Feature Fusion Network for coral reef health detection.</p>
-              <a href="https://www.mdpi.com/2813-2203/2/1/6" target="_blank">Read Publication</a>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/coral.png" class="img-fluid" alt="MAFFN YOLOV5 Project">
+              <div class="portfolio-info">
+                <h4>MAFFN YOLOV5</h4>
+                <p>Multi-Scale Attention Feature Fusion Network for coral reef health detection.</p>
+                <a href="https://www.mdpi.com/2813-2203/2/1/6" title="Publication Link" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/cell_detection.png" alt="3D Histological Cell Atlas">
-              <h4>3D Histological Cell Atlas</h4>
-              <p>Gaussian Mixture Model-based atlas with 75% improved processing speed.</p>
-              <a href="https://www.biorxiv.org/content/10.1101/2024.12.17.628811v1.full.pdf" target="_blank">View on GitHub</a>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/cell_detection.png" class="img-fluid" alt="3D Histological Cell Atlas">
+              <div class="portfolio-info">
+                <h4>3D Histological Cell Atlas</h4>
+                <p>Gaussian Mixture Model-based atlas with 75% improved processing speed.</p>
+                <a href="https://www.biorxiv.org/content/10.1101/2024.12.17.628811v1.full.pdf" title="Publication" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /New Portfolio Section -->
+    </section><!-- /Portfolio Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
